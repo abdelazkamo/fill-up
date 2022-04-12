@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-scan',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScanPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public route: Router
+  ) { }
 
   ngOnInit() {
+  }
+  public goToNextPage() {
+    this.route.navigate(['/services']);
   }
 
 }
