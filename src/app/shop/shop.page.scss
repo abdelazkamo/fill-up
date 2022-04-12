@@ -1,0 +1,73 @@
+ion-content{
+
+    --background: #ffffff;
+    text-align:center;
+  }
+
+ion-header{
+    height: 80px;
+    background-color: #23DC97;
+    margin: auto;
+}
+ion-title{
+    color: black;
+    font-size: 20px;
+    font-family: Montserrat;
+    text-align:center;
+    margin: auto;
+}
+  #shop{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  #text1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    font-size: 20px;
+    font-family: Montserrat;
+    color: black;
+  }
+  #text2{
+    display: block;
+    margin-left: -60px;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Montserrat;
+    color: black;
+  }
+  #text3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    font-size: 20px;
+    font-family: Montserrat;
+    color: black;
+  }
+  #product{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 80%;
+    height: 125px;
+    border: solid 1px black;
+    border-radius: 50px;
+    font-size:large;
+    color: black;
+    background-color: #e9e9e9;
+}
+#btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 70%;
+    height: 60px;
+    font-size: large;
+  }
