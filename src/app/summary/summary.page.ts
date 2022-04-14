@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-summary',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SummaryPage implements OnInit {
 
-  constructor() { }
+  constructor(public route: Router) { }
 
   ngOnInit() {
+  }
+
+  public goToNextPage() {
+    this.route.navigate(['/payement']);
   }
 
 }

@@ -1,9 +1,22 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>summary</ion-title>
-  </ion-toolbar>
+  <ion-title><br><b>SUMMARY</b></ion-title>
 </ion-header>
 
 <ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <img src="/assets/img/summary.svg" id="summary">
+    </ion-row>
+    <ion-row>
+      <div id="reciep"><br><b>BENSON * 2 = 50.0 </b>
+        <div id="total"><b>TOTAL IS R50.0</b></div>
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-button shape="round" color="dark" id="btn" (click)="goToNextPage()">PAY</ion-button>
+    </ion-row>
+
+  </ion-grid>
 
 </ion-content>

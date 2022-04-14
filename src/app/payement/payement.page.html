@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-title><br><b>PAYEMENT</b></ion-title>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <img src="/assets/img/payement.svg" id="payement">
+    </ion-row>
+    <ion-row>
+      <ion-text id="text1"><b>HOW DO YOU WANT TO PAY ?</b></ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-button shape="round" color="warning" id="btn" (click)="goToCashPage()">CASH</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button shape="round" color="success" id="btn2" (click)="goToCardPage()">CARD PAYEMENT</ion-button>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

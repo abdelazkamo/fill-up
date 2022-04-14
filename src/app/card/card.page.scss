@@ -16,7 +16,7 @@ ion-title{
     text-align:center;
     margin: auto;
 }
-  #service{
+  #card{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -26,24 +26,15 @@ ion-title{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -25px;
+    margin-top: 60px;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: Light;
     color: black;
   }
-  #btn{
-    display: block;
+#btn{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
-    width: 70%;
-    height: 60px;
-    font-size: large;
-}
-#btn2{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
+    margin-top: 170px;
     width: 70%;
     height: 60px;
     font-size: large;

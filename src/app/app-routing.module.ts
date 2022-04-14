@@ -27,6 +27,26 @@ const routes: Routes = [
     path: 'summary',
     loadChildren: () => import('./summary/summary.module').then( m => m.SummaryPageModule)
   },
+  {
+    path: 'payement',
+    loadChildren: () => import('./payement/payement.module').then( m => m.PayementPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'cash',
+    loadChildren: () => import('./cash/cash.module').then( m => m.CashPageModule)
+  },
+  {
+    path: 'code',
+    loadChildren: () => import('./code/code.module').then( m => m.CodePageModule)
+  },
+  {
+    path: 'thanks',
+    loadChildren: () => import('./thanks/thanks.module').then( m => m.ThanksPageModule)
+  },
 ];
 
 @NgModule({
