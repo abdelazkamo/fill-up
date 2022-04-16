@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-title><br><b>FILL UP PETROL</b></ion-title>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <img src="/assets/img/fillup.jpg" id="fillup">
+    </ion-row>
+    <ion-row>
+      <ion-text id="text">HOW MUCH PETROL DO YOU WANT ?</ion-text>
+    </ion-row>
+    <ion-row>
+      <div id="CodeInput">
+        <ion-item>
+          <ion-label position="floating">e.g R100</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </div>
+    </ion-row>
+    <ion-row>
+      <ion-button shape="round" color="dark" id="btn" (click)="goToNextPage()">CHECKOUT</ion-button>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

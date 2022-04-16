@@ -46,7 +46,11 @@ const routes: Routes = [
   {
     path: 'thanks',
     loadChildren: () => import('./thanks/thanks.module').then( m => m.ThanksPageModule)
+  },  {
+    path: 'fillup',
+    loadChildren: () => import('./fillup/fillup.module').then( m => m.FillupPageModule)
   },
+
 ];
 
 @NgModule({

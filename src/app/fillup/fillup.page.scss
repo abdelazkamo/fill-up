@@ -1,0 +1,46 @@
+ion-content{
+
+    --background: #ffffff;
+    text-align:center;
+  }
+
+ion-header{
+    height: 80px;
+    background-color: #23DC97;
+    margin: auto;
+}
+ion-title{
+    color: black;
+    font-size: 20px;
+    font-family: Montserrat;
+    text-align:center;
+    margin: auto;
+}
+  #fillup{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  #text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+  #CodeInput{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+  }
+#btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 70%;
+    height: 60px;
+    font-size: large;
+}

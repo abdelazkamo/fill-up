@@ -13,8 +13,10 @@ export class ServicesPage implements OnInit {
   ngOnInit() {
   }
 
-  public goToNextPage() {
+  public goToShopPage() {
     this.route.navigate(['/shop']);
   }
-
+  public goToFillupPage() {
+    this.route.navigate(['/fillup']);
+  }
 }
