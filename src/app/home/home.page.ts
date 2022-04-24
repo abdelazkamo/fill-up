@@ -13,7 +13,8 @@ export class HomePage {
   ) {}
 
   public goToNextPage() {
-    this.route.navigate(['/scan']);
+    this.route.navigate(['/login']);
   }
 
 }
+ 

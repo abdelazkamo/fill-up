@@ -16,26 +16,18 @@ ion-title{
     text-align:center;
     margin: auto;
 }
+
   #shop{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
   #text1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 45px;
-    font-size: 20px;
-    font-family: Montserrat;
-    color: black;
-  }
-  #text2{
-    display: block;
-    margin-left: -60px;
-    margin-right: auto;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 20px;
     font-family: Montserrat;
     color: black;
@@ -53,7 +45,7 @@ ion-title{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 10px;
     width: 80%;
     height: 125px;
     border-radius: 20px;

@@ -46,9 +46,18 @@ const routes: Routes = [
   {
     path: 'thanks',
     loadChildren: () => import('./thanks/thanks.module').then( m => m.ThanksPageModule)
-  },  {
+  },
+  {
     path: 'fillup',
     loadChildren: () => import('./fillup/fillup.module').then( m => m.FillupPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
 
 ];

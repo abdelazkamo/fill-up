@@ -6,19 +6,16 @@
 
   <ion-grid>
     <ion-row>
-      <img src="/assets/img/shop.svg" id="shop">
+      <img src="/assets/img/shop.webp" id="shop">
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-text id="text1"><b>CURRENT TOTAL:</b></ion-text>
-      </ion-col>
+      <ion-col><ion-text id="text1"><b>CURRENT TOTAL:</b></ion-text></ion-col>
       <ion-col></ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-text id="text2"><b>PRODUCTS </b></ion-text>
+        <ion-searchbar placeholder="Search products"></ion-searchbar>
       </ion-col>
-      <ion-col></ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
@@ -46,7 +43,7 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-button shape="round" color="dark" id="btn" (click)="goToNextPage()"><b>CHECKOUT</b></ion-button>
+      <ion-button shape="round" color="dark" id="btn" (click)="showConfirm()"><b>CHECKOUT</b></ion-button>
     </ion-row>
 
   </ion-grid>

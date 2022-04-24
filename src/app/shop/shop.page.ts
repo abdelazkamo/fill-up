@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-shop',
@@ -8,12 +9,39 @@ import { Router } from '@angular/router';
 })
 export class ShopPage implements OnInit {
 
-  constructor(public route: Router) { }
+  constructor(
+    public route: Router,
+    public alertCtrl: AlertController
+    ) { }
 
   ngOnInit() {
   }
-  public goToNextPage() {
-    this.route.navigate(['/summary']);
-  }
 
-}
+  async showConfirm() {  
+    const confirm = await this.alertCtrl.create({  
+      header: 'Are you filling up ?',  
+      buttons: [ 
+        {  
+          text: 'Yes',  
+          handler: () => {  
+            this.route.navigate(['/fillup']);  
+          }  
+        }, 
+        {  
+          text: 'No',    
+          handler: () => {  
+            this.route.navigate(['/summary']);  
+          }  
+        },  
+        {  
+          text: 'Cancel',  
+          role: 'cancel',  
+          handler: () => {  
+            
+          } 
+        } 
+      ]  
+    });  
+    await confirm.present();  
+  }  
+}  
