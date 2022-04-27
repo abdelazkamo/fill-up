@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular'; 
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-fillup',
@@ -9,37 +9,37 @@ import { AlertController } from '@ionic/angular';
 })
 export class FillupPage implements OnInit {
 
-  constructor(    
+  constructor(
     public route: Router,
     public alertCtrl: AlertController) { }
 
   ngOnInit() {
   }
-  async showConfirm() {  
-    const alert  = await this.alertCtrl.create({  
-      header: 'Are you shopping up?',   
-      buttons: [  
-        {  
-          text: 'Yes',  
-          handler: () => {  
-            this.route.navigate(['/shop']);  
-          }  
-        }, 
-        {  
-          text: 'No',    
-          handler: () => {  
-            this.route.navigate(['/summary']);  
-          }  
-        },  
-        {  
-          text: 'Cancel',  
-          role: 'cancel',  
-          handler: () => {  
-            
-          }  
-        }, 
-      ]  
-    });  
-    await alert.present();  
-  }  
-}  
+  async showConfirm() {
+    const alert  = await this.alertCtrl.create({
+      header: 'Are you shopping too?',
+      buttons: [
+        {
+          text: 'Yes',
+          handler: () => {
+            this.route.navigate(['/shop']);
+          }
+        },
+        {
+          text: 'No',
+          handler: () => {
+            this.route.navigate(['/summary']);
+          }
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+
+          }
+        },
+      ]
+    });
+    await alert.present();
+  }
+}
